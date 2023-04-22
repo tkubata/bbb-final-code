@@ -1,1 +1,1 @@
-"use strict";(()=>{var e=document.querySelector(".transition-trigger"),t=document.querySelector(".transition");window.addEventListener("load",()=>{sessionStorage.length===0&&(t.style.display="flex",e.click(),sessionStorage.setItem("Loaded","True"))});})();
+"use strict";(()=>{sessionStorage.setItem("key","value");})();
