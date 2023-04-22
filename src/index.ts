@@ -3,9 +3,8 @@ const transition = document.querySelector('.transition');
 
 window.addEventListener('load', () => {
   if (sessionStorage.length === 0) {
-    transition.style.display = 'flex';
-    transitionTrigger.click();
-    sessionStorage.setItem('Loaded', 'True');
+    console.log('hello');
   } else {
+    console.log('Goodbye');
   }
 });
