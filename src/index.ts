@@ -1,7 +1,11 @@
-import { greetUser } from '$utils/greet';
+const transitionTrigger = document.querySelector('.transition-trigger');
+const transition = document.querySelector('.transition');
 
-window.Webflow ||= [];
-window.Webflow.push(() => {
-  const name = 'Tomas Kubata';
-  greetUser(name);
+window.addEventListener('load', () => {
+  if (sessionStorage.length === 0) {
+    transition.style.display = 'flex';
+    transitionTrigger.click();
+    sessionStorage.setItem('Loaded', 'True');
+  } else {
+  }
 });
